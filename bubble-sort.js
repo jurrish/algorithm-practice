@@ -24,3 +24,4 @@ function bubbleSort(arr){
 }
 
 console.log(bubbleSort(arr));
+console.log(bubbleSort([1,7,2,10,8,7, 7, 30]));
