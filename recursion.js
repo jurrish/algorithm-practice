@@ -5,3 +5,10 @@ let countDownFrom = (num) => {
 };
 
 console.log(countDownFrom(10));
+
+
+//whenever you use recursion, you can use a loop.
+
+//higher order function practice
+
+//filter
