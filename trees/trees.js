@@ -71,3 +71,10 @@ TreeNode.prototype.prettyPrint = function(){
 
 
 treeRoot.prettyPrint();
+
+//TODO _root : points to the root node
+//TODO _traverseDF(callback) traverses nodes with DFS
+//TODO _traverseBF(callback) traverses nodes with BFS
+//TODO _contains(data, traversal) searches for a node in a tree
+//TODO add(data, toData, traverse) adds a node to a tree
+//TODO remove(child, parent) removes a node from a tree
