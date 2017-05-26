@@ -36,7 +36,7 @@ Tree.prototype.add = function(val, parentVal){
   this.preOrder(node => {
     if(node.val === parentVal) {
       //push the val into the children array
-      node.children.push(new Node(val));
+      node.children.push(newNode);
       return;
     }
   });
