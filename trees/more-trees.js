@@ -69,3 +69,19 @@ let categories = [
 // }
 
 //how?
+
+let makeTree = (categories, parent) => {
+  let node = {};
+  categories
+  .filter(c => c.parent === parent)
+  .forEach(c => node[c.id] =
+    //make a tree that have categories that have animals as a property, which calls animals as a parent category, which calls cats/dogs that have properties of chihuha etc
+    makeTree(categories, c.id));
+  return node;
+};
+
+console.log(
+  JSON.stringify(
+    makeTree(categories, null)
+    , null, 2)
+);
