@@ -38,3 +38,34 @@ let countDownFrom = (num) => {
 countDownFrom(10);
 //should output :
 //10, 9,8,7...
+
+let categories = [
+  { id: 'animals', 'parent': null},
+  { id: 'mammals', 'parent': 'animals'},
+  { id: 'cats', 'parent': 'mammals'},
+  { id: 'dogs', 'parent': 'mammals'},
+  { id: 'chihuaha', 'parent': 'dogs'},
+  { id: 'labrador', 'parent': 'dogs'},
+  { id: 'persian', 'parent': 'cats'},
+  { id: 'siamese', 'parent': 'cats'}
+];
+
+//all of these have parent/child relationships and we want to to display it like so:
+
+//
+// { //parent category
+//   animals: { //parent of mammals
+//     mammals: { //child of animals
+//       dogs: { //parent of chihuaha and labrador
+//         chihuaha: null //no children!
+//         labrador: null
+//       },
+//       cats: {
+//         persian: null
+//         siamese: null
+//       }
+//     }
+//   }
+// }
+
+//how?
